@@ -22,8 +22,10 @@ import Layout from "../layouts/Layout.astro";
     </header>
     <main class="min-w-1000px max-w-full p-5">
         <div>
-            <h1>Hi 👋, meet <span class="text-gradient">yrt</span></h1>
-            <p class="instructions">
+            <h1 class="text-5xl md:text-6xl">
+                Hi 👋, meet <span class="text-gradient">yrt</span>
+            </h1>
+            <p class="instructions text-lg md:text-xl">
                 There are tons of meeting apps out there, but
                 <strong>yrt</strong>
                 is different - We are simple, open and private.
@@ -65,7 +67,6 @@ import Layout from "../layouts/Layout.astro";
         z-index: -1;
     }
     h1 {
-        font-size: 4rem;
         font-weight: 700;
         line-height: 1;
         text-align: center;
@@ -89,7 +90,6 @@ import Layout from "../layouts/Layout.astro";
         border-radius: 8px;
     }
     .instructions code {
-        font-size: 0.8em;
         font-weight: bold;
         background: rgba(var(--accent-light), 12%);
         color: rgb(var(--accent-light));

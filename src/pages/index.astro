@@ -1,15 +1,48 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
 ---
 
-<Layout title="🚧 Welcome to yrt 🚧">
+<Layout title="👋 Meet yrt">
+    <header>
+        <div class="flex items-center justify-between">
+            <div>
+                <img class="h-12" src="/yrt.png" alt="logo" />
+            </div>
+            <div>
+                <a
+                    id="gh-btn"
+                    class="inline-block rounded border border-white px-12 py-3 text-sm font-medium text-white hover:bg-white hover:text-black focus:outline-none focus:ring"
+                    href="https://github.com/yrt-app"
+                    target="_blank"
+                >
+                    GitHub 🌟
+                </a>
+            </div>
+        </div>
+    </header>
     <main>
-        <h1>Welcome to <span class="text-gradient">yrt</span></h1>
-        <p class="instructions">
-            This website is currently under construction - Please come back
-            later to learn more about yrt
-        </p>
+        <div class="h-auto flex items-center justify-center">
+            <div>
+                <h1>Hi 👋, meet <span class="text-gradient">yrt</span></h1>
+                <p class="instructions">
+                    There are tons of meeting apps out there, but
+                    <strong>yrt</strong>
+                    is different - We are simple, open and private.
+                    <br />
+                    <br />
+                    <strong>(1)</strong> We focus on helping you to collaborate so
+                    you can focus on what you are doing.
+                    <br />
+                    <strong>(2)</strong> The project is built by the community, for
+                    the community. All source code is released under open source
+                    licences and the infrastructure is easy to self-host.
+                    <br />
+                    <strong>(3)</strong> We are a purpose-driven project. Our goal
+                    is to build the best real-time collaboration tool possible. Your
+                    personal data belongs to you, we will never track your data.
+                </p>
+            </div>
+        </div>
     </main>
 </Layout>
 
@@ -17,11 +50,20 @@ import Card from "../components/Card.astro";
     main {
         margin: auto;
         padding: 1rem;
-        width: 800px;
-        max-width: calc(100% - 2rem);
+        width: 1000px;
+        max-width: calc(100% - 3rem);
         color: white;
         font-size: 20px;
-        line-height: 1.6;
+        line-height: 1.5;
+    }
+    header {
+        margin-left: 3rem;
+        margin-right: 3rem;
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+    }
+    #gh-btn {
+        box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.15);
     }
     .astro-a {
         position: absolute;

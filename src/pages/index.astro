@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="👋 Meet yrt">
-    <header>
+    <header class="mx-5 mt-5 mb-20 lg:mx-10">
         <div class="flex items-center justify-between">
             <div>
                 <img class="h-12" src="/yrt.png" alt="logo" />
@@ -20,28 +20,26 @@ import Layout from "../layouts/Layout.astro";
             </div>
         </div>
     </header>
-    <main>
-        <div class="h-auto flex items-center justify-center">
-            <div>
-                <h1>Hi 👋, meet <span class="text-gradient">yrt</span></h1>
-                <p class="instructions">
-                    There are tons of meeting apps out there, but
-                    <strong>yrt</strong>
-                    is different - We are simple, open and private.
-                    <br />
-                    <br />
-                    <strong>(1)</strong> We focus on helping you to collaborate so
-                    you can focus on what you are doing.
-                    <br />
-                    <strong>(2)</strong> The project is built by the community, for
-                    the community. All source code is released under open source
-                    licences and the infrastructure is easy to self-host.
-                    <br />
-                    <strong>(3)</strong> We are a purpose-driven project. Our goal
-                    is to build the best real-time collaboration tool possible. Your
-                    personal data belongs to you, we will never track your data.
-                </p>
-            </div>
+    <main class="min-w-1000px max-w-full p-5">
+        <div>
+            <h1>Hi 👋, meet <span class="text-gradient">yrt</span></h1>
+            <p class="instructions">
+                There are tons of meeting apps out there, but
+                <strong>yrt</strong>
+                is different - We are simple, open and private.
+                <br />
+                <br />
+                <strong>(1)</strong> We focus on helping you to collaborate so you
+                can focus on what you are doing.
+                <br />
+                <strong>(2)</strong> The project is built by the community, for the
+                community. All source code is released under open source licences
+                and the infrastructure is easy to self-host.
+                <br />
+                <strong>(3)</strong> We are a purpose-driven project. Our goal is
+                to build the best real-time collaboration tool possible. Your personal
+                data belongs to you, we will never track your data.
+            </p>
         </div>
     </main>
 </Layout>
@@ -49,18 +47,10 @@ import Layout from "../layouts/Layout.astro";
 <style>
     main {
         margin: auto;
-        padding: 1rem;
         width: 1000px;
-        max-width: calc(100% - 3rem);
         color: white;
         font-size: 20px;
         line-height: 1.5;
-    }
-    header {
-        margin-left: 3rem;
-        margin-right: 3rem;
-        margin-top: 2rem;
-        margin-bottom: 5rem;
     }
     #gh-btn {
         box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.15);

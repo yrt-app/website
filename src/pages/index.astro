@@ -74,6 +74,13 @@ import Layout from "../layouts/Layout.astro";
         background-size: 600%;
         animation: gradient 15s ease infinite;
     }
+    .text-gradient {
+        background-image: var(--accent-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 600%;
+        animation: gradient 15s ease infinite;
+    }
     @keyframes gradient {
         0% {
             background-position: 0% 50%;
@@ -87,13 +94,6 @@ import Layout from "../layouts/Layout.astro";
         100% {
             background-position: 0% 50%;
         }
-    }
-    .text-gradient {
-        background-image: var(--accent-gradient);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-size: 400%;
-        background-position: 0%;
     }
     .instructions {
         margin-bottom: 2rem;

@@ -6,16 +6,16 @@ import Layout from "../layouts/Layout.astro";
     <header class="mx-5 mt-5 mb-10 md:mb-20 lg:mx-10">
         <div class="flex items-center justify-between">
             <div>
-                <img class="h-12" src="/yrt.png" alt="logo" />
+                <img class="h-12" src="/yrt.svg" alt="logo" />
             </div>
             <div>
                 <a
                     id="gh-btn"
-                    class="inline-block rounded border border-white px-12 py-3 text-sm font-medium text-white hover:bg-white hover:text-black focus:outline-none focus:ring"
+                    class="inline-block border rounded px-12 py-3 text-md font-medium text-white border-[#444444] hover:bg-white hover:text-black"
                     href="https://github.com/yrt-app"
                     target="_blank"
                 >
-                    GitHub 🌟
+                    GitHub ⭐️
                 </a>
             </div>
         </div>
@@ -53,9 +53,6 @@ import Layout from "../layouts/Layout.astro";
         color: white;
         font-size: 20px;
         line-height: 1.5;
-    }
-    #gh-btn {
-        box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.15);
     }
     .astro-a {
         position: absolute;
@@ -98,11 +95,5 @@ import Layout from "../layouts/Layout.astro";
     }
     .instructions strong {
         color: rgb(var(--accent-light));
-    }
-    .link-card-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-        gap: 2rem;
-        padding: 0;
     }
 </style>

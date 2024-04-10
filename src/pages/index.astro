@@ -11,7 +11,7 @@ import Layout from "../layouts/Layout.astro";
             <div>
                 <a
                     id="gh-btn"
-                    class="inline-block border rounded px-12 py-3 text-md font-medium text-white border-[#444444] hover:bg-white hover:text-black"
+                    class="inline-block border rounded px-12 py-3 text-md font-medium text-white border-[#444444]"
                     href="https://github.com/yrt-app"
                     target="_blank"
                 >
@@ -68,6 +68,25 @@ import Layout from "../layouts/Layout.astro";
         line-height: 1;
         text-align: center;
         margin-bottom: 1em;
+    }
+    #gh-btn:hover {
+        background: linear-gradient(-20deg, #2b006f, #4800bb, #bb0087, #bb009d);
+        background-size: 500% 500%;
+        animation: gradient 10s ease infinite;
+    }
+    @keyframes gradient {
+        0% {
+            background-position: 0% 0%;
+        }
+        25% {
+            background-position: 100% 50%;
+        }
+        50% {
+            background-position: 50% 100%;
+        }
+        100% {
+            background-position: 0% 0%;
+        }
     }
     .text-gradient {
         background-image: var(--accent-gradient);

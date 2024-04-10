@@ -70,22 +70,22 @@ import Layout from "../layouts/Layout.astro";
         margin-bottom: 1em;
     }
     #gh-btn:hover {
-        background: linear-gradient(-20deg, #2b006f, #4800bb, #bb0087, #bb009d);
-        background-size: 500% 500%;
-        animation: gradient 10s ease infinite;
+        background: linear-gradient(-45deg, #6200ff, #bb0087, #7d00bb, #bb009d);
+        background-size: 600%;
+        animation: gradient 15s ease infinite;
     }
     @keyframes gradient {
         0% {
-            background-position: 0% 0%;
+            background-position: 0% 50%;
         }
         25% {
-            background-position: 100% 50%;
-        }
-        50% {
             background-position: 50% 100%;
         }
+        50% {
+            background-position: 100% 50%;
+        }
         100% {
-            background-position: 0% 0%;
+            background-position: 0% 50%;
         }
     }
     .text-gradient {

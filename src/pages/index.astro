@@ -7,16 +7,20 @@
         <meta name="generator" content={Astro.generator} />
         <title>👋 Meet yrt</title>
     </head>
-    <body>
+    <body class="bg-neutral-950">
         <div
-            class="bg-neutral-950 font-sans text-white h-screen flex flex-col md:items-center md:justify-center"
+            class="font-sans text-white h-screen flex md:items-center md:justify-center"
         >
-            <div class="md:w-[600px] w-full md:h-auto h-screen flex flex-col">
-                <div class="flex justify-between h-12 border-b border-[#444444]">
+            <div class="md:w-[600px]">
+                <div
+                    class="flex justify-between h-12 border-b border-[#444444]"
+                >
                     <div class="w-12 p-2 border-r border-[#444444]">
                         <img src="/yrt.svg" alt="logo" />
                     </div>
-                    <div class="border-l border-[#444444] text-blue-500 hover:bg-white hover:text-black">
+                    <div
+                        class="border-l border-[#444444] text-blue-500 hover:bg-white hover:text-black"
+                    >
                         <a
                             class="h-full flex justify-center items-center px-10 text-center text-lg"
                             href="https://github.com/yrt-app"
@@ -26,9 +30,12 @@
                         </a>
                     </div>
                 </div>
-                <div class="flex flex-1">
-                    <div class="md:flex-none md:min-w-12 w-0 md:border-r border-[#444444]"></div>
-                    <div class="md:flex-initial flex-1 p-5">
+                <div class="flex">
+                    <div
+                        class="flex-none md:min-w-12 w-0 md:border-r border-[#444444]"
+                    >
+                    </div>
+                    <div class="flex-initial p-5">
                         <h1 class="text-4xl mb-8 font-bold">
                             Hi 👋, meet <span class="text-gradient">yrt</span>
                         </h1>

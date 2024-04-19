@@ -1,80 +1,70 @@
----
-import Layout from "../layouts/Layout.astro";
----
-
-<Layout title="👋 Meet yrt">
-    <header class="mx-5 mt-5 mb-5 md:mb-20 lg:mx-10">
-        <div class="flex items-center justify-between">
-            <div>
-                <img class="h-11" src="/yrt.svg" alt="logo" />
-            </div>
-            <div>
-                <a
-                    id="gh-btn"
-                    class="inline-block border rounded px-12 py-3 text-md font-medium text-white border-[#444444]"
-                    href="https://github.com/yrt-app"
-                    target="_blank"
-                >
-                    GitHub ⭐️
-                </a>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="yrt - Real-time collaboration" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>👋 Meet yrt</title>
+    </head>
+    <body>
+        <div
+            class="bg-neutral-950 font-sans text-white h-screen flex flex-col sm:items-center sm:justify-center"
+        >
+            <div class="sm:w-[600px] sm:h-auto h-screen flex flex-col">
+                <div class="flex justify-between h-12 border-b">
+                    <div class="w-12 p-2 border-r">
+                        <img src="/yrt.svg" alt="logo" />
+                    </div>
+                    <div class="border-l hover:bg-white hover:text-black">
+                        <a
+                            class="h-full flex justify-center items-center px-10 text-center text-lg font-medium"
+                            href="https://github.com/yrt-app"
+                            target="_blank"
+                        >
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-1">
+                    <div class="sm:flex-none min-w-12 border-r"></div>
+                    <div class="sm:flex-initial flex-1 p-5">
+                        <h1 class="text-4xl mb-8 font-bold">
+                            Hi 👋, meet <span class="text-gradient">yrt</span>
+                        </h1>
+                        <p class="instructions text-stone-300 text-lg">
+                            There are tons of meeting apps out there, but
+                            <strong>yrt</strong>
+                            is different. We are simple, open and private.
+                            <br />
+                            <br />
+                            <strong>(1)</strong> We focus on helping you to collaborate
+                            so you can focus on something else.
+                            <br />
+                            <strong>(2)</strong> We build for the community. All
+                            source code is released under open source licences and
+                            the infrastructure is easy to self-host.
+                            <br />
+                            <strong>(3)</strong> We are a purpose-driven project.
+                            Our goal is to build the best real-time collaboration
+                            tool possible. Our users are not the product.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-    </header>
-    <main class="min-w-1000px max-w-full p-5">
-        <div>
-            <h1 class="text-5xl mb-8 md:mb-12 md:text-6xl">
-                Hi 👋, meet <span class="text-gradient">yrt</span>
-            </h1>
-            <p class="instructions text-lg md:text-xl">
-                There are tons of meeting apps out there, but
-                <strong>yrt</strong>
-                is different - We are simple, open and private.
-                <br />
-                <br />
-                <strong>(1)</strong> We focus on helping you to collaborate so you
-                can focus on something else.
-                <br />
-                <strong>(2)</strong> We build for the community. All source code
-                is released under open source licences and the infrastructure is
-                easy to self-host.
-                <br />
-                <strong>(3)</strong> We are a purpose-driven project. Our goal is
-                to build the best real-time collaboration tool possible. Your personal
-                data belongs to you, we will never track your data.
-            </p>
-        </div>
-    </main>
-</Layout>
+    </body>
+</html>
 
 <style>
-    main {
-        margin: auto;
-        width: 1000px;
-        color: white;
-        font-size: 20px;
-        line-height: 1.5;
-    }
-    .astro-a {
-        position: absolute;
-        top: -32px;
-        left: 50%;
-        transform: translatex(-50%);
-        width: 220px;
-        height: auto;
-        z-index: -1;
-    }
-    h1 {
-        font-weight: 700;
-        line-height: 1;
-        text-align: center;
-    }
-    #gh-btn:hover {
-        background: var(--accent-gradient);
-        background-size: 600%;
-        animation: gradient 15s ease infinite;
-    }
     .text-gradient {
-        background-image: var(--accent-gradient);
+        background-image: linear-gradient(
+            -45deg,
+            #6200ff,
+            #bb0087,
+            #7d00bb,
+            #bb009d
+        );
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-size: 600%;
@@ -93,25 +83,5 @@ import Layout from "../layouts/Layout.astro";
         100% {
             background-position: 0% 50%;
         }
-    }
-    .instructions {
-        margin-bottom: 2rem;
-        border: 1px solid rgba(var(--accent-light), 25%);
-        background: linear-gradient(
-            rgba(var(--accent-dark), 66%),
-            rgba(var(--accent-dark), 33%)
-        );
-        padding: 1.5rem;
-        border-radius: 8px;
-    }
-    .instructions code {
-        font-weight: bold;
-        background: rgba(var(--accent-light), 12%);
-        color: rgb(var(--accent-light));
-        border-radius: 4px;
-        padding: 0.3em 0.4em;
-    }
-    .instructions strong {
-        color: rgb(var(--accent-light));
     }
 </style>

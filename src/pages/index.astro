@@ -39,23 +39,28 @@
                         <h1 class="text-4xl mb-8 font-bold">
                             Hi 👋, meet <span class="text-gradient">yrt</span>
                         </h1>
-                        <p class="instructions text-stone-300 text-lg">
+                        <p class="text-stone-300 text-lg">
                             There are tons of meeting apps out there, but
-                            <strong>yrt</strong>
-                            is different. We are simple, open and private.
-                            <br />
-                            <br />
-                            <strong>(1)</strong> We focus on helping you to collaborate
-                            so you can focus on something else.
-                            <br />
-                            <strong>(2)</strong> We build for the community. All
-                            source code is released under open source licences and
-                            the infrastructure is easy to self-host.
-                            <br />
-                            <strong>(3)</strong> We are a purpose-driven project.
-                            Our goal is to build the best real-time collaboration
-                            tool possible. Our users are not the product.
+                            <strong>yrt</strong> is different. We are
+                            <strong>simple</strong>, <strong>open</strong> and
+                            <strong>private</strong>.
                         </p>
+                        <ul class="features mt-4 pl-8 text-stone-300 text-lg">
+                            <li>
+                                We focus on helping you to collaborate so you
+                                can focus on something else.
+                            </li>
+                            <li>
+                                We build for the community. All source code is
+                                released under open source licences and the
+                                infrastructure is easy to self-host.
+                            </li>
+                            <li>
+                                We are a purpose-driven project. Our goal is to
+                                build the best real-time collaboration tool
+                                possible. Our users are not the product.
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -64,6 +69,14 @@
 </html>
 
 <style>
+    .features {
+        list-style: emojis;
+    }
+    @counter-style emojis {
+        system: fixed;
+        symbols: "😎" "🤩" "🤫";
+        suffix: " ";
+    }
     .text-gradient {
         background-image: linear-gradient(
             -45deg,
